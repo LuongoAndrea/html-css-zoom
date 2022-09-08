@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+
+.text-first{
+    text-transform: inherit;
+}
+/* header */
+nav.flex{
+    display: flex;
+    justify-content: right;
+}
+nav span{
+    background-color: rgba(112, 112, 112, 0.61);
+    color: white;
+    padding: 5px;
+    margin: 5px 5px 0 0;
+}
+/* main  */
+main.container{
+    width: 90%;
+    margin: 30px auto;
+}
+main.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main div{
+    width: calc((100% - 30px)/ 7);
+    height: calc((90vh - 150px) / 5);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+main div img{
+    width: 100%;
+    height: 100wv;
+}
+main div span{
+    position: absolute;
+    bottom: 10px;
+    left:0;
+    color: white;
+    background-color: rgba(87, 87, 87, 0.5);
+}
+/* footer  */
+footer{
+    background-color: rgba(87, 87, 87, 0.5);
+    height: 110px;
+}
+footer.flex{
+    display: flex;
+    justify-content: space-between;
+}
+footer section{
+    display: flex;
+    color: white;
+    font-size: 30px;
+    align-items: center;
+}
+footer section div{
+    padding: 10px;
+    cursor: pointer;
+}
+footer section div:hover, footer section>span:hover{
+    background-color: rgba(87, 87, 87, 0.5);
+}
+footer section span{
+    padding: 10px 10px 10px 0;
+    cursor: pointer;
+}
+footer section div, footer section span{
+    text-align: center;
+}
+.green{
+    color: rgb(38, 236, 38);
+}
+footer section:first-of-type, footer section:last-of-type{
+    width: 200px;
+}
+footer section:last-of-type div{
+    position: relative;
+    background-color: rgba(87, 87, 87, 0.5);
+    width: 100%;
+    height: 100%;
+}
+footer section:last-of-type div span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    color: red;
+}
+footer section div span {
+    display: block;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+footer section span i{
+    transform: rotate(180deg);
+}
